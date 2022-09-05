@@ -134,7 +134,7 @@ def reply_message(payload):
 
 @app.route("/")
 def hello():
-    #client.chat_postMessage(channel="#dev", text="THAT IS A BAD WORD!")
+    # client.chat_postMessage(channel="#dev", text="THAT IS A BAD WORD!")
     return "Hello there!"
 
 
@@ -144,7 +144,7 @@ def slack_interactive():
     print(headers)
     event_data = json.loads(request.form['payload'])
     print(event_data)
-    #requests.post(event_data['response_url'])
+    # requests.post(event_data['response_url'])
     return "success", 200
 
 
